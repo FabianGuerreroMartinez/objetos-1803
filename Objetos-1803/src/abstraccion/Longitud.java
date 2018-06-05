@@ -13,13 +13,13 @@ public class Longitud {
   private float metros;
  private float pies;
 
- public void setmetros (float metros){
+ public void setMetros (float metros){
      this.metros = metros;
  }
- public float getmetros(){
+ public float getMetros(){
      return metros;
  }
- public void setpies (float pies){
+ public void setPies (float pies){
      this.pies=pies;
 } 
 }
