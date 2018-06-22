@@ -19,6 +19,12 @@ public class Persistenciausuario {
     oos.writeObject(c);
     oos.close();
     }
-    
+    public static  Cliente leer()throws Exception{
+        File file=new File("archivaldo.yomero");
+        FileInputStream fis=new FileInputStream(file);
+        ObjectInputStream ois= new ObjectInputStream(fis);
+        Cliente c= (Cliente) ois.readObject();
+        return c;
+    }
     
 }

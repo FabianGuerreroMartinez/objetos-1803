@@ -6,12 +6,14 @@
 package Serializar;
 public class Aplicacion {
 public static void main(String[] args) throws Exception{
+
+Cliente c=Persistenciausuario.leer();
+    System.out.println("Vamos a checar el nombre "+c.getNombre());
+  /*
 Cliente c=new Cliente();
-c.setEdad(20);
-c.setNombre("Fabian");
-c.setSueldo(500);
+c.setNombre("Becky");
+c.setEdad(4);
 Persistenciausuario.guardar(c);
-    System.out.println("Guardado con exito!! ");
-    
+*/
 }   
 }
